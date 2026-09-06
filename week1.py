@@ -7,7 +7,6 @@ df["Company Name"] =df["Company Name"].str.split("\n").str[0]
 df["Company Name"] =df["Company Name"].str.strip()
 df["Rating"] =df["Rating"].replace(-1, np.nan)
 df["Rating"] =df["Rating"].replace(-1.0, np.nan)
-
 df["Founded"]= df["Founded"].replace(-1, np.nan)
 
 df["Headquarters"]=df["Headquarters"].replace("-1", "Unknown")
